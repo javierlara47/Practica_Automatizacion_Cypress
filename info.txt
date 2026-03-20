@@ -18,3 +18,13 @@ GITHUB
 2- Crear archivo .gitignore
 
 3- git add .
+
+4- git commit -m ""
+
+5- Crear repositorio manualmente en GitHub 
+
+6- git remote add origin https://github.com/javierLaraParrilla/Practica_Automatizacion.git
+
+7- git push -u origin main
+
+8- git push -u origin main
