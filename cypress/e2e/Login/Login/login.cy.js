@@ -1,5 +1,5 @@
 /// <reference types='Cypress' />
-import LoginPage from "../pages/LoginPage";
+import LoginPage from "../../../pages/LoginPage";
 describe('Login', () =>{
     let tiempo=1500
     it('Iniciar sesión correctamente', () =>{
