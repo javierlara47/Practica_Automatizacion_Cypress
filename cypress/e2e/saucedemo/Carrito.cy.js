@@ -35,5 +35,14 @@ describe("Carrito", () =>{
 
     it("Continuar (Checkout)", () =>{
         Carrito.checkout()
+        cy.wait(2000)
+    })
+
+    it("Acceder al detalle del producto", () =>{
+        Carrito.detailProduct()
+    })
+
+    it.only("Completar proceso de chekout", () =>{
+        Carrito.completeCheckout("Javier","Lara","41790")
     })
 })
