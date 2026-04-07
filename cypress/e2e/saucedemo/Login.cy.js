@@ -4,7 +4,7 @@ describe("Login", () =>{
 
     beforeEach(() =>{
         cy.visit('https://www.saucedemo.com/')
-        cy.title('eq','Swag Labs')
+        cy.title().should('eq','Swag Labs')
         cy.wait(1000)
         cy.fixture('user').as('userData')
     })
@@ -24,7 +24,7 @@ describe("Login", () =>{
         Login.introducirPassword(this.userData.validUser.password)
         cy.wait(1000)
         Login.loginClick()
-        cy.get(Login.elements.errorMessage).should('have.text','Epic sadface: Username and password do not match any user in this service')
+        cy.get(Login.elements.errorMessage).should('have.text','Epic sadface: Username and password do not match any user in this servi')
     })
 
     it('Introducir contraseña incorrecta', function(){
