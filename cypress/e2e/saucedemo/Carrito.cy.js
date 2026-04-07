@@ -32,4 +32,8 @@ describe("Carrito", () =>{
         cy.wait(1500)
         Carrito.removeProductByName("Sauce Labs Fleece Jacket")
     })
+
+    it("Continuar (Checkout)", () =>{
+        Carrito.checkout()
+    })
 })
